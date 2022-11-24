@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset {
+            border: solid 1px black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="datos_alumno.php" method="get">
+        <fieldset>
+            <legend>DATOS DEL ALUMNO</legend>
+            <p>Introduzca su nombre: <input type="text" name="nombre"></p>
+            <p>Enseñanza: 
+                <input type="radio" name="radio" value="secundaria">Secundaria
+                <input type="radio" name="radio" value="bachillerato">Bachillerato
+                <input type="radio" name="radio" value="un ciclo medio">Ciclo Medio
+                <input type="radio" name="radio" value="un ciclo superior">Ciclo Superior
+            </p>
+            <p>Introduzca su telefono: <input type="number" name="tlf"></p>
+            <p>Matriculado <input type="checkbox" name="matriculado"></p>
+            <p>Mostrar datos:
+               <select name="tipo_dato">
+                   <option value="pantalla">Por Pantalla</option>
+                   <option value="archivo">En Archivo datos.txt</option>
+               </select>
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar datos" name="enviar">
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset {
+            border: 1px solid black;
+            width: 350px;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- En caso de que el usuario quiera dar de alta un contacto. -->
+    <h3>Agenda Virtual PHP</h3>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend><h1>Contactos</h1></legend>
+            <p>Para guardar presione el botón</p>
+            <p>Nombre: <input type="text" name="nombre"></p>
+            <p>Trabajo: <input type="text" name="trabajo"></p>
+            <p>Telefono: <input type="number" name="tlf"></p>
+            <p>Dirección: <input type="text" name="direccion"></p>
+            <p>Otras: <input type="text" name="otras"></p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Guardar!">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
